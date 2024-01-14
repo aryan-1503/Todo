@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Lato:wght@300;400&family=Roboto:wght@500&family=Rubik&family=Rubik+Bubbles&family=Rubik+Doodle+Shadow&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.heading{
+    background-color: #72a0a9;
+    font-size: 40px;
+    font-family: "Rubik Doodle Shadow",serif;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.main{
+    display: flex;
+}
+
+.left{
+    width: 15vw;
+    height: 90vh;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: "Lato",serif;
+    font-weight: bolder;
+}
+
+.buttons{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button{
+    width: 12rem;
+    height: 2rem;
+    border: none;
+    background-color: #f5f5f5;
+    font-size: 23px;
+    font-family: "Lato",serif;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+
+}
+
+.buttons button:hover{
+    background-color: #a8a7a7;
+}
+
+.custom-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    gap: 1rem;
+}
+.project{
+    font-size: 24px;
+}
+#add-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 15vw;
+}
+#add-project button{
+    border: none;
+    background-color: #f5f5f5;
+    font-size: 20px;
+    font-family: "Lato",serif;
+    font-weight: bolder;
+    width: inherit;
+    height: 5vh;
+}
+
+#add-project button:hover{
+    border-radius: 1rem;
+    background-color: #a8a7a7;
+}
+
+#add-project button:active{
+    border-radius: 1rem;
+    background-color: black;
+    color: #f5f5f5;
+}
+.project-card{
+    width: 15vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+.project-card input[type='text']{
+    width: 10vw;
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.project-card input[type='button']{
+    width: 5vw;
+    height: 1.8rem;
+    background-color: #47faa2;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.project-card input[type='button']:hover{
+    background-color: #0ae887;
+}
+
+.project-card button{
+    width: 5vw;
+    height: 1.8rem;
+    background-color: #ff3737;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.project-card button:hover{
+    background-color: #fc0303;
+}
+
+#add-project-button button{
+    border: 3px solid black;
+    border-radius: 1rem ;
+    background-color: #f5f5f5;
+    font-size: 20px;
+    font-family: "Lato",serif;
+    font-weight: bolder;
+    width: 10vw;
+    height: 5vh;
+}
+
+#add-project-button button:hover{
+    transform: scale(97%);
+}
+
+#add-project-button button:active{
+    background-color: black;
+    color: #f5f5f5;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10vw;
+    gap: 2rem;
+}
+#project-name{
+    font-family: "Lato",serif;
+    font-weight: bolder;
+    font-size: 35px;
+}
+.tasks-container{
+    display: flex;
+    justify-content: left;
+    width: 60vw;
+    height: 70vh;
+    flex-direction: column;
+    gap: 2rem;
+}
+#task{
+    display: flex;
+    align-items: center;
+    gap: 22rem;
+    font-family: "Lato",serif;
+    font-weight: bolder;
+    font-size: 19px;
+    background-color: lightgray;
+    width: 45vw;
+    height: 7vh;
+    border-radius: 0.5rem;
+}
+
+.task-left{
+    display: flex;
+    gap: 1rem;
+    padding-left: 2rem;
+}
+.task-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+.date{
+    width: 8vw;
+}
+
+
+.remove button{
+    background-color: lightgray;
+    border: none;
+    font-size: 15px;
+}
+.remove button:active{
+    transform: scale(95%);
+}
+button:active{
+    transform: scale(98%);
+}
+#add-task-btn button{
+    width: 9vw;
+    height: 5vh;
+    font-family: "Lato",serif;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 3px black solid;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+#add-task-btn button:hover{
+    transform: scale(97%);
+}
+
+#add-task-btn button:active{
+    background-color: black;
+    color: #f5f5f5;
+}
+
+.add-task-container{
+    position: fixed;
+    top: 38%;
+    left: 42%;
+    height: 30vh;
+    width: 20vw;
+    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.add-task-name input[type="text"]{
+    border: none;
+    width: 16vw;
+    height: 4vh;
+    border-radius: 0.5rem;
+}
+
+input[type="button"]{
+    width: 7vw;
+    height: 1.8rem;
+    background-color: #47faa2;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+input[type="button"]:active{
+    transform: scale(0.95);
+}
+.add-task-container button{
+    width: 7vw;
+    height: 1.8rem;
+    background-color: red;
+    border: none;
+    border-radius: 0.5rem;
+}
+#task-card{
+    display: flex;
+}
